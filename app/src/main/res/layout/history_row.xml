@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        app:cardElevation="@dimen/margin_regular"
+        app:cardCornerRadius="@dimen/margin_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin_small"
+                android:id="@+id/isDoneImageView"
+                android:src="@drawable/ic_access_time_white_36dp"
+                android:tint="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/isImportantImageView"
+                android:src="@drawable/ic_stat_no_star"
+                android:tint="@color/colorPrimary"
+                android:layout_above="@+id/history_row_textView_Text"
+                android:layout_alignEnd="@+id/history_row_textView_Time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_regular"
+                android:id="@+id/history_row_textView_Title"
+                android:text="@string/Title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_alignTop="@+id/isDoneImageView"
+                android:layout_toEndOf="@+id/isDoneImageView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/history_row_textView_Text"
+                android:text="@string/Text"
+
+                android:layout_marginEnd="@dimen/margin_large"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_below="@+id/history_row_textView_Title"
+                android:layout_alignStart="@+id/history_row_textView_Title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/history_row_textView_Time"
+                android:text="@string/Time"
+                android:textSize="@dimen/text_size_small"
+                android:layout_margin="@dimen/margin_regular"
+                android:layout_below="@+id/history_row_textView_Text"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

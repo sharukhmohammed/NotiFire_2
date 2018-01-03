@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="editText_margin_start">54dp</dimen>
+
+    <dimen name="notifire_app_bar_height">260dp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_regular">8dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+</resources>
